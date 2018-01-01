@@ -9,8 +9,16 @@
         <link rel="stylesheet" href="/css/app.css">
 
         <title>Joshua Costello &ndash; Developer. Craftsman.</title>
+
+        @if($page->gtm)
+            @include('_layouts.gtm')
+        @endif
     </head>
     <body>
+        @if($page->gtm)
+            @include('_layouts.gtm-noscript')
+        @endif
+
         @yield('body')
     </body>
 </html>

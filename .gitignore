@@ -1,5 +1,6 @@
 .DS_Store
 
-/build_local/
+/build_*/
 /node_modules/
 /vendor/
+config.production.php
